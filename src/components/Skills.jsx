@@ -1,11 +1,12 @@
 import React from "react";
 
 
-function Model() {
+function Skills() {
     return (
         <div >
+            Skills
         </div>
     );
 }
 
-export default Model;
+export default Skills;

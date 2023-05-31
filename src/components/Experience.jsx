@@ -1,11 +1,12 @@
 import React from "react";
 
 
-function Model() {
+function Experience() {
     return (
         <div >
+            Experience
         </div>
     );
 }
 
-export default Model;
+export default Experience;

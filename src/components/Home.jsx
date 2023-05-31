@@ -1,11 +1,12 @@
 import React from "react";
 
 
-function Model() {
+function Home() {
     return (
         <div >
+            Home
         </div>
     );
 }
 
-export default Model;
+export default Home;

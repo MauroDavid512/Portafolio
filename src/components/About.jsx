@@ -1,11 +1,12 @@
 import React from "react";
 
 
-function Model() {
+function About() {
     return (
         <div >
+            About
         </div>
     );
 }
 
-export default Model;
+export default About;

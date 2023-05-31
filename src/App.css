@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
 }
+
+.bigcontainer{
+  width: 100%;
+  left: 160px;
+}
+
+
 
 

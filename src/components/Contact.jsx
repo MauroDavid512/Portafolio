@@ -1,11 +1,12 @@
 import React from "react";
 
 
-function Model() {
+function Contact() {
     return (
         <div >
+            Contact
         </div>
     );
 }
 
-export default Model;
+export default Contact;

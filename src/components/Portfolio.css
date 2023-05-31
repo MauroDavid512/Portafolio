@@ -1,0 +1,26 @@
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: brown;
+    margin: 50px;
+    width: 200px;
+    height: 150px;
+}
+
+.cardimg {
+    height: 100px;
+    width: 200px;
+
+}
+
+.cardtitle {
+    color: black;
+}
+
+.lala{
+    background-color: aliceblue;
+}
