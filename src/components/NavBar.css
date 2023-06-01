@@ -6,12 +6,31 @@
     flex-direction: column;
     width: 100px;
     height: 100%;
-    border-right-width: 5px;
-    border-right-color: rgba(196, 6, 95, 0.527);
-    border-right-style: double;
+
 }
 
 .navoption{
     cursor: pointer;
     margin-top: 22px;
+    transition: .4s;
+}
+
+.optionimage{
+    width: 100px;
+    transition: .4s;
+}
+
+
+.contactcontainer{
+    margin-top: 100%;
+}
+
+.contact{
+    width: 100px;
+    transition: .4s;
+}
+
+.hovereffect:hover{
+    transform: scale(1.2) rotate(-5deg);
+    transition: .4s;
 }

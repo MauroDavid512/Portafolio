@@ -1,10 +1,11 @@
 import React from "react";
+import experiencebutton from "../imgs/experiencebutton.png"
 
 
 function Experience() {
     return (
         <div >
-            Experience
+            <img src={experiencebutton} alt="" />
         </div>
     );
 }

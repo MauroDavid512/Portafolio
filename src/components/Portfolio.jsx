@@ -1,38 +1,44 @@
 import React from "react";
 import './Portfolio.css'
+import portfoliobutton from "../imgs/portfoliobutton.png"
+import pokeapi from "../imgs/pokeapi.png"
+import reserva from "../imgs/reserva.png"
+import lmi from "../imgs/lmi.png"
+import veroport from "../imgs/veroport.png"
+
 
 function Portfolio() {
 
     let content = [
         {
-            title: "SAP Pokemon",
+            title: "SPA Pokemon",
             link: "https://pokemonapimauro-psi.vercel.app/",
-            image: "",
+            image: pokeapi,
             description: ""
         },
         {
             title: "La Reserva",
             link: "https://la-reserva.vercel.app/",
-            image: "",
+            image: reserva,
             description: ""
         },
         {
             title: "Liga Mendocina de improvisación",
             link: "https://lmi-frontt.vercel.app/",
-            image: "",
+            image: lmi,
             description: ""
         },
         {
             title: "Vero Calderón Portfolio",
             link: "https://verocalderon.vercel.app/",
-            image: "",
+            image: veroport,
             description: ""
         }
     ]
 
     return (
-        <div >
-            Portfolio:
+        <div className="portfolio">
+            <img src={portfoliobutton} alt="" />
 
             <div className="cardcontainer">
                 {content.map(e => {
