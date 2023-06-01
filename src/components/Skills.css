@@ -44,6 +44,7 @@
 
 .skillName{
     opacity: 0%;
+    width: 100px;
     transition: .3s;
 }
 

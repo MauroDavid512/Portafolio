@@ -2,16 +2,27 @@ import React from "react";
 import skillsbutton from "../imgs/skillsbutton.png"
 import "./Skills.css"
 import css from "../imgs/css.png"
+import cssword from "../imgs/cssword.png"
 import express from "../imgs/express.png"
+import expressword from "../imgs/expressword.png"
 import figma from "../imgs/figma.png"
+import figmaword from "../imgs/figmaword.png"
 import javascript from "../imgs/javascript.png"
+import javascriptword from "../imgs/javascriptword.png"
 import node from "../imgs/node.png"
+import nodeword from "../imgs/nodeword.png"
 import postgres from "../imgs/postgres.png"
+import postgresword from "../imgs/postgresword.png"
 import reactimg from "../imgs/reactimg.png"
+import reactword from "../imgs/reactword.png"
 import redux from "../imgs/redux.png"
+import reduxword from "../imgs/reduxword.png"
 import sequelize from "../imgs/sequelize.png"
+import sequelizeword from "../imgs/sequelizeword.png"
 import typescript from "../imgs/typescript.png"
+import typescriptword from "../imgs/typescriptword.png"
 import wordpress from "../imgs/wordpress.png"
+import wordpressword from "../imgs/wordpressword.png"
 
 
 function Skills() {
@@ -19,47 +30,47 @@ function Skills() {
     let skills = [
         {
             logo: css,
-            name: "CSS"
+            name: cssword
         },
         {
             logo: express,
-            name: "Express"
+            name: expressword
         },
         {
             logo: figma,
-            name: "Figma"
+            name: figmaword
         },
         {
             logo: javascript,
-            name: "JavaScript"
+            name: javascriptword
         },
         {
             logo: node,
-            name: "Node"
+            name: nodeword
         },
         {
             logo: postgres,
-            name: "PostgreSQL"
+            name: postgresword
         },
         {
             logo: reactimg,
-            name: "React"
+            name: reactword
         },
         {
             logo: redux,
-            name: "Redux"
+            name: reduxword
         },
         {
             logo: sequelize,
-            name: "Sequelize"
+            name: sequelizeword
         },
         {
             logo: typescript,
-            name: "TypeScript"
+            name: typescriptword
         },
         {
             logo: wordpress,
-            name: "Wordpress"
+            name: wordpressword
         }
     ]
 
@@ -73,8 +84,8 @@ function Skills() {
                 return (
                     <div className="skillCard">
                     <img className="skillLogo" src={e.logo} alt="" />
-                    <div className="skillName">
-                    {e.name}
+                    <div >
+                    <img className="skillName" src={e.name} alt="" />
                     </div>
                     </div>
                 )
