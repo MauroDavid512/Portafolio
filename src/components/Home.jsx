@@ -7,6 +7,10 @@ import letme from "../imgs/letme.png"
 
 
 function Home() {
+
+    const darkMode = React.useSelector(state => state.darkMode)
+    const mode = darkMode? "darkOn" : "darkOff"
+
     return (
         <div className="home">
             <img src={homebutton} alt="" />

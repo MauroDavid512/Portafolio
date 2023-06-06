@@ -1,0 +1,46 @@
+.aboutcontainer{
+    display: flex;
+}
+
+.photocontainer{
+    position: relative;
+    background-color: aliceblue;
+}
+
+.dibumile{
+    position: absolute;
+    width: 600px;
+}
+
+.draw{
+    clip-path: circle(200% at 100% 100%);
+    transition: 2s;
+}
+
+.photocontainer:hover{
+    .draw{
+        clip-path: circle(0% at 100% 100%);
+        transition: 2s;
+    }
+}
+
+.abouttext{
+    position: relative;
+    margin-top: 40px ;
+    width: 30%;
+    left: 50%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('../imgs/texturafotocopia.jpg');
+    padding: 3%;
+}
+
+@media (max-width: 1400px) {
+    .abouttext{
+        left: 10%;
+        margin-top:600px;
+        width:70%;
+    }
+
+}
+

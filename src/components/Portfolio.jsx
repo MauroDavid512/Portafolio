@@ -5,6 +5,7 @@ import pokeapi from "../imgs/pokeapi.png"
 import reserva from "../imgs/reserva.png"
 import lmi from "../imgs/lmi.png"
 import veroport from "../imgs/veroport.png"
+import "./initanimation.css"
 
 
 function Portfolio() {
@@ -14,7 +15,9 @@ function Portfolio() {
             title: "SPA Pokemon",
             link: "https://pokemonapimauro-psi.vercel.app/",
             image: pokeapi,
-            description: ""
+            description: {
+                en:"Simple Page App"
+            }
         },
         {
             title: "La Reserva",
@@ -37,7 +40,7 @@ function Portfolio() {
     ]
 
     return (
-        <div className="portfolio">
+        <div className="initanimation">
             <img src={portfoliobutton} alt="" />
 
             <div className="cardcontainer">
@@ -45,10 +48,9 @@ function Portfolio() {
                     return (
 
                         <a className="card" target="_blank" href={e.link}>
-
                                 <img className="cardimg" src={e.image} alt={e.title} />
                                 <div className="cardtitle" >{e.title}</div>
-
+                                <div className="carddescription" >{e.description.en}</div>
                         </a>
                     )
                 })}

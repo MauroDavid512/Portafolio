@@ -9,10 +9,21 @@ import skillsbutton from "../imgs/skillsbutton.png"
 import logooutlook from "../imgs/logooutlook.png"
 import logoin from "../imgs/logoin.png"
 import logogithub from "../imgs/logogithub.png"
+import { useDispatch, useSelector } from "react-redux";
+import * as actions from '../redux/actions'
 
 
 
 function NavBar() {
+
+    const dispatch = useDispatch()
+    const darkMode = useSelector(state => state.darkMode)
+
+    const mode = darkMode? "darkOn" : "darkOff"
+
+    const handleMode = () => {
+        dispatch(actions.darkMode())
+    }
     
     return (
         < >
@@ -26,6 +37,9 @@ function NavBar() {
                 <a href="mailto:mauroalos@hotmail.com"><img className="contact hovereffect" src={logooutlook} alt="" /></a>
                 <Link target="_blank" to="https://www.linkedin.com/in/mauro-david-89432b193/"><img className="contact hovereffect" src={logoin} alt="" /></Link>
                 <Link target="_blank" to="https://github.com/MauroDavid512"><img className="contact hovereffect" src={logogithub} alt="" /></Link>
+                </div>
+                <div>
+                    <div onClick={handleMode} title={darkMode? "Disable dark mode" : "Dark Mode"} className={`darkMode ${mode}`}></div>
                 </div>
             </div>
 

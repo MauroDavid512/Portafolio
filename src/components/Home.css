@@ -33,3 +33,7 @@
     width: 100%;
     max-width: 1000px;
 }
+
+.darkOn{
+    filter:brightness(100%);
+}

@@ -34,3 +34,17 @@
     transform: scale(1.2) rotate(-5deg);
     transition: .4s;
 }
+
+.darkMode{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.darkOn{
+    background-image: url("../imgs/texturacuadricula.png");
+}
+
+.darkOff{
+    background-image: url("../imgs/texturapizarra.jpg");
+}
