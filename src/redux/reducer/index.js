@@ -7,6 +7,7 @@ import {
 const initialState = {
     lang:"EN",
     darkMode:false
+    
 }
 
 const rootReducer = (state = initialState, action) => {

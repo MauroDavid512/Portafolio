@@ -6,9 +6,12 @@ import reserva from "../imgs/reserva.png"
 import lmi from "../imgs/lmi.png"
 import veroport from "../imgs/veroport.png"
 import "./initanimation.css"
+import { useSelector } from "react-redux";
 
 
 function Portfolio() {
+
+    const darkMode = useSelector(state => state.darkMode)
 
     let content = [
         {
@@ -41,7 +44,7 @@ function Portfolio() {
 
     return (
         <div className="initanimation">
-            <img src={portfoliobutton} alt="" />
+            <img className={darkMode? "darkletter" : "lightletter"}  src={portfoliobutton} alt="" />
 
             <div className="cardcontainer">
                 {content.map(e => {

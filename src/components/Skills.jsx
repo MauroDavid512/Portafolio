@@ -23,9 +23,14 @@ import typescript from "../imgs/typescript.png"
 import typescriptword from "../imgs/typescriptword.png"
 import wordpress from "../imgs/wordpress.png"
 import wordpressword from "../imgs/wordpressword.png"
+import { useSelector } from "react-redux";
 
 
 function Skills() {
+
+    const darkMode = useSelector(state => state.darkMode)
+
+    const mode = darkMode? "darkletter" : "lightletter"
 
     let skills = [
         {
@@ -77,15 +82,15 @@ function Skills() {
 
     return (
         <div className="skills">
-            <img src={skillsbutton} alt="" />
+            <img className={mode} src={skillsbutton} alt="" />
             <br />
             <div className="skillsContainer">
             {skills.map(e => {
                 return (
                     <div className="skillCard">
-                    <img className="skillLogo" src={e.logo} alt="" />
+                    <img className={`skillLogo ${darkMode?"darkimage" : false}`} src={e.logo} alt="" />
                     <div >
-                    <img className="skillName" src={e.name} alt="" />
+                    <img className={`skillName ${mode}`} src={e.name} alt="" />
                     </div>
                     </div>
                 )
