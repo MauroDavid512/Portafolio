@@ -1,0 +1,46 @@
+
+.experienceCard{
+    margin: 3%;
+    background-image: url(../imgs/texturafotocopia.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.rotate0{
+    transform: rotate(1deg);
+}
+
+.rotate1{
+    transform: rotate(-1deg);
+}
+
+.titleExp{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.littleIcon{
+    width: 30px;
+    filter: saturate(0);
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.linkbtn{
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 3px;
+    color: black;
+    transition: .4s;
+}
+
+.linkbtn:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
