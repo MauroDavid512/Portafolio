@@ -4,6 +4,8 @@
     background-image: url(../imgs/texturafotocopia.jpg);
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
+    font-size: 25px;
+    width: 90%;
 }
 
 .rotate0{
@@ -15,15 +17,22 @@
 }
 
 .titleExp{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
 }
 
 .littleIcon{
-    width: 30px;
+    width: 50px;
     filter: saturate(0);
+    transition: .5s;
+}
+
+.littleIcon:hover{
+    filter: none;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .linksContainer{
@@ -33,14 +42,8 @@
 }
 
 .linkbtn{
-    background-color: rgba(255, 255, 255, 0.473);
     padding: 3px;
     color: black;
-    transition: .4s;
 }
 
-.linkbtn:hover{
-    transform: scale(1.1);
-    transition: .4s;
-}
 

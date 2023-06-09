@@ -22,7 +22,7 @@ function ExperienceCard(props) {
             <div className="linksContainer">
             {props.links?.map(e => {
                 return (
-                    <a href={e.link}><div className="linkbtn">{e.type}</div></a>
+                    <a target="_blank" href={e.link}><div className="linkbtn paperButton">{e.type}</div></a>
                 )
             })}
             </div>

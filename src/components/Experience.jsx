@@ -127,8 +127,33 @@ function Experience() {
     return (
         <div className="initanimation">
             <img className={darkMode? "darkletter" : "lightletter"} src={experiencebutton} alt="" />
+
+            <div className="selector">
+                {
+                    [
+                        {
+                            title: "FullStack Experience",
+                            category: "fullstack"
+                        },
+                        {
+                            title: "Front-End Experience",
+                            category: "front",
+                        },
+                        {
+                            title: "Back-End Experience",
+                            category: "back"
+                        }
+                    ].map(e => {
+                        return (
+                            
+                            <a href={`#${e.category}`}><div className="paperButton">{e.title}</div></a>
+                            
+                        )
+                    })
+                }
+            </div>
             <div className="experienceContainer">
-                <img className={`categoryTitle ${darkMode? "darkletter" : "lightletter"}`} src={fullstack} alt="" />
+                <img id="fullstack" className={`categoryTitle ${darkMode? "darkletter" : "lightletter"}`} src={fullstack} alt="" />
                 {fsExp.map(e => {
                     return (
                         <div className={`rotate${parseInt(fsExp.findIndex(ele => ele.title == e.title))%2}`}>
@@ -136,7 +161,7 @@ function Experience() {
                         </div>
                     )
                 })}
-                <img className={`categoryTitle ${darkMode? "darkletter" : "lightletter"}`} src={frontend} alt="" />
+                <img id="front" className={`categoryTitle ${darkMode? "darkletter" : "lightletter"}`} src={frontend} alt="" />
                 {frontExp.map(e => {
                     return (
                         <div className={`rotate${parseInt(frontExp.findIndex(ele => ele.title == e.title))%2}`}>
@@ -144,10 +169,10 @@ function Experience() {
                         </div>
                     )
                 })}
-                <img className={`categoryTitle ${darkMode? "darkletter" : "lightletter"}`} src={backend} alt="" />
+                <img id="back" className={`categoryTitle ${darkMode? "darkletter" : "lightletter"}`} src={backend} alt="" />
                 {backExp.map(e => {
                     return (
-                        <div className={`rotate${parseInt(backExp.findIndex(ele => ele.title == e.title))%2}`}>
+                        <div  className={`rotate${parseInt(backExp.findIndex(ele => ele.title == e.title))%2}`}>
                         <ExperienceCard title={e.title} date={e.date} description={e.description} abilities={e.abilities} image={e.image} links={e.links} />
                         </div>
                     )
