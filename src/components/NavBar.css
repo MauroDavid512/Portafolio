@@ -77,13 +77,12 @@
     transition: .5s;
 }
 
-.darkbuttoncontainer:hover{
-    .darkMode:hover{
+.darkbuttoncontainer:hover .darkMode:hover{
         transform: scale(1.2)  rotateY(180deg);
         transition: .5s;
     }
-    transition: .5s;
-}
+
+
 
 .darkOn{
     background-image: url("../imgs/texturacuadricula.png");
