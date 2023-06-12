@@ -37,9 +37,6 @@
     
 }
 
-.noselect{
-    user-select: none;
-}
 
 .paperButton:hover{
     border-color: black;
