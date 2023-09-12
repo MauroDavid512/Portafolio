@@ -16,6 +16,7 @@ import typescript from "../imgs/typescript.png"
 import wordpress from "../imgs/wordpress.png"
 import java from "../imgs/java.png"
 import python from "../imgs/python.png"
+import docker from "../imgs/docker.png"
 import { useSelector } from "react-redux";
 import fullstack from "../imgs/fullstack.png"
 import frontend from "../imgs/frontend.png"
@@ -108,7 +109,7 @@ function Experience() {
         },
         {
             title: "NoCountry",
-            date: "Mar-2023 present",
+            date: "Mar-2023 Present",
             dateES: "Mar-2023 Actualidad",
             description: "Develop a database for a delivery application. Develop functionalities for orders, user account creation, restaurants, and their respective menus. Implement shopping cart functionality for orders",
             descriptionES: "Desarrollé una base de datos para una aplicación de delivery. Realicé funcionalidades para pedidos, creación de cuentas de usuario, restaurantes y sus respectivos menús. Implementé la funcionalidad de carrito de compras para los pedidos.",
@@ -125,7 +126,7 @@ function Experience() {
         },
         {
             title: "Fóforo",
-            date: "Mar-2023 prenset",
+            date: "Mar-2023 Prenset",
             dateES: "Mar-2023 Actualidad",
             description: "Develop and design digital portfolios for professionals of all kinds. Sell the service. Arrange meetings with different clients to agree on decisions and preferences regarding the product.",
             descriptionES: "Desarrollo y diseño portfolios digitales para profesionales de todo tipo. Realizo las ventas el servicio. Coordino reuniones con diferentes clientes para acordar decisiones y preferencias con respecto al producto.",
@@ -165,6 +166,22 @@ function Experience() {
             description: 'I sold books from Billiken publishing company. I searched for customers and collected installment payments.',
             descriptionES: 'Venta de libros de editorial Billiken. Búsqueda de clientes y cobro de las cuotas',
             category: "noIT"
+        },
+        {
+            title: "Xumek",
+            date: "Jun-2023 Present",
+            dateES: "Jun-2015 Actualidad",
+            description: 'Design, development, and deployment of the official website for the Xumek Association. Design of a system with a database that stores articles of journalistic and scientific nature on the site. It includes user registration and an administrative panel. Developed independently.',
+            descriptionES: 'Diseño, desarrollo y despliegue del sitio oficial de la asociación Xumek. Diseño de un sistema con base de datos que almacena articulos de índole periodistica y cientifica en el sitio. Cuenta con creación de usuario y panel administrativo. Desarrollo en solitario',
+            category: "fullstack",
+            abilities: [css, express, javascript, node, postgres, reactimg, redux, sequelize, docker],
+            links:[
+                {
+                    type: "Deploy",
+                    typeES: "Sitio",
+                    link: "http://xumek.org.ar/"
+                }
+            ]
         }
     ]
 
